@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="UCP" content="width=device-width, initial-scale=1.0">
+   <link rel="manifest" href="./manifest.json">
     <title>Link de UCP</title>
 </head>
 <body>
@@ -12,5 +13,13 @@
     <main>
         <img src="./logo/logo.png" alt="Descripción de la imagen">
     </main>
+
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+          navigator.serviceWorker.register('sw.js')
+        }
+      </script>
+      
+
 </body>
 </html>
